@@ -8,6 +8,8 @@ android:
     - tools
     - build-tools-27.0.2
     - android-27
+licenses:
+    - 'android-sdk-license-.+'
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
