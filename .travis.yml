@@ -1,5 +1,4 @@
 language: android
-sudo: required
 android:
   components:
     - tools
@@ -8,7 +7,9 @@ android:
     # See: https://docs.travis-ci.com/user/languages/android/#Overview
     - tools
     - build-tools-27.0.2
+    - build-tools-26.0.2
     - android-27
+    - android-26
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
