@@ -17,3 +17,10 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 script: ./gradlew clean build
+deploy:
+  provider: releases
+  api_key: ""
+  file: ""
+  skip_cleanup: true
+  on:
+    tags: true
